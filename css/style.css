@@ -1,0 +1,252 @@
+@charset "utf-8";
+
+body {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.5em;
+    font-family: "M PLUS 1p";
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    width: 100%;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 20px;
+    line-height: 3em;
+}
+
+h3 {
+    color: #fff;
+    padding-left: 5%;
+}
+
+.box_width {
+    width: 95%;
+    margin:  0 auto;
+}
+
+/* header ここから */
+
+.heder_box {
+    overflow: hidden;
+    height: 4em;
+    /* background-color: pink; */
+}
+
+.logo {
+    float: left;
+    line-height: 4em;
+}
+
+.address {
+    float: right;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.menu_box {
+    overflow: hidden;
+}
+
+.menu_box ul li {
+    float: left;
+    width: 50%;
+    text-align: center;
+    height: 4em;
+    line-height: 4em;
+    background-color: #8a563f;
+    border-bottom: 2px solid #fff;
+    box-sizing: border-box;
+    color: #fff;
+    opacity: 0.8;
+}
+
+.menu_box ul li:hover {
+    opacity: 0.4;
+    transition: 0.6s;
+}
+
+.menu_box ul li:nth-child(odd) {
+    border-right: 2px solid #fff;
+}
+
+.menu_box ul li:hover {
+    cursor: pointer;
+}
+
+.image {
+    width: 100%;
+    height: 300px;
+    background-image: url(../image/01.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* header ここまで */
+
+
+/* 新着情報 ここから*/
+
+.content_boxA {
+    background: #857459;
+    /* padding-top: 5%; */
+    padding-bottom: 5%;
+}
+
+.content_boxA_back {
+    background-color: #fff;
+}
+
+.news {
+    padding: 1em;
+}
+
+.news ul li {
+    padding-bottom: 1em;
+}
+
+.news ul li:last-child {
+    padding-bottom: 0;
+}
+
+.news .day {
+    padding-right: 2em;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.news .text {
+ font-size: 12px;
+ text-decoration: underline;
+}
+
+/* 新着情報 ここまで*/
+
+/* 営業時間 ここから */
+
+.content_boxB {
+    /* background: #; */
+    /* padding-top: 5%; */
+    padding-bottom: 5%;
+}
+
+.content_boxB h3 {
+    color: inherit;
+}
+
+.time_wrap {
+    border-collapse: collapse;
+    width: 100%;
+    padding: 1em;
+    /* display: inline-block; */
+    box-sizing: border-box;
+    table-layout: fixed;
+    /* font-size: 12px; */
+}
+
+.time_wrap tr {
+}
+
+.time_wrap th {
+    padding: 1em;
+    /* : #857459; */
+    width: 40%;
+    /* display: inline-block; */
+    border: 1px solid #857459;
+    /* border-collapse: collapse; */
+    font-weight: bold;
+}
+
+.time_wrap td {
+    padding: 1em;
+    width: 60%;
+    border: 1px solid #857459;
+    /* border-collapse: collapse; */
+}
+
+
+/* 営業時間 ここまで */
+
+/* システム ここから */
+
+.content_boxC {
+    background: #857459;
+    /* padding-top: 5%; */
+    padding-bottom: 5%;
+}
+
+.content_boxC_back {
+    background: #fff;
+}
+
+.system {
+    padding: 1em;
+}
+
+.system {
+    padding: 1em;
+    color: red;
+}
+
+
+/* システム　ここまで */
+
+
+/* アクセス　ここから */
+
+.content_boxD h3 {
+    color: inherit;
+}
+
+
+/* アクセス　ここまで */
+
+
+/* fooer　ここから */
+
+footer {
+    margin-top: 150px;
+    background-color: #8a563f;
+}
+
+footer p {
+    color: #fff;
+    font-size: 12px;
+    text-align: right;
+}
+
+/* fooer　ここまで */
+
+/* pageトップ ここから */
+
+#page_top {
+    width: 50px;
+    height: 50px;
+    background: gray;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 20px;
+    color: #fff;
+    position: fixed;
+    bottom: 1.5em;
+    right: 2.5%;
+    border: 2px solid #fff;
+}
+
+#page_top:hover {
+    opacity: 0.8;
+    cursor: pointer;
+    /* transition: 0.6s; */
+}
+
+/* pageトップ　ここまで */
