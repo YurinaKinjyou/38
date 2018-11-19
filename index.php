@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>スナック38 / 西荻窪カラオケスナック</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="heder_wrap">
+        <div class="heder_box box_width">
+            <div class="logo">
+                <h1>スナック38</h1>
+            </div>
+            <div class="address">
+                <p style="font-weight: bold;">西荻窪駅 南口 徒歩5分</p>
+                <p>東京都杉並区松庵３丁目３９−１１</p>
+            </div>
+        </div>
+        <div class="menu_box">
+            <ul>
+                <li><a href="#news">新着情報</a></li>
+                <li><a href="#time">営業時間</a></li>
+                <li><a href="#system">システム</a></li>
+                <li><a href="#access">アクセス</a></li>
+            </ul>
+        </div>
+        <div class="image_box">
+            <div class="image">
+            </div>
+        </div>
+    </div>
+
+    <div class="content_wrap">
+        <div class="content_boxA" id="news">
+            <h3>新着情報</h3>
+             <div class="box_width content_boxA_back">
+                <div class="news">
+                    <ul>
+                        <li><span class="day">2018/12/24</span><p class="text">サンタコスの日です！サンタに会いに来てください！</p></li>
+                        <li><span class="day">2018/10/31</span><p class="text">ハロウィンですね。女の子たちがコスプレして待ってます！</p></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="content_boxB" id="time">
+                <h3>営業時間</h3>
+                 <div class="box_width content_boxA_back">
+                     <table class="time_wrap">
+                         <tr><th>平日 営業時間</th><td>20時 〜 25時</td></tr>
+                         <tr><th>週末 営業時間</th><td>20時 〜 26時</td></tr>
+                         <tr><th>定休日</th><td>日曜　祝日</td></tr>
+                     </table>
+                </div>
+        </div>
+
+        <div class="content_boxC" id="system">
+                <h3>システム</h3>
+                <div class="box_width content_boxC_back">
+                    <div class="system">
+                        <p>1時間 飲み放題 3,000円</p>
+                        <p style="font-size: 12px;">※ 延長ごとに 3,000円 追加（1時間単位）</p>
+                    </div>
+                </div>
+        </div>
+
+        <div class="content_boxD" id="access">
+                <h3>アクセス</h3>
+                <div class="box_width">
+                     <p style="text-indent: 1em;">〒 住所</p>
+                     <p style="text-indent: 1em;">東京都杉並区松庵３丁目３９−１１</p>
+                     <div class="map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.9315368751613!2d139.59675507894863!3d35.70330233646699!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018ee102ebc77d5%3A0x6e8d9b8859f09157!2z44CSMTY3LTAwNTQg5p2x5Lqs6YO95p2J5Lim5Yy65p2-5bq177yT5LiB55uu77yT77yZ4oiS77yR77yR!5e0!3m2!1sja!2sjp!4v1542655608557" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <div id="page_top">
+            <span class="fas fa-arrow-up"></span>
+    </div>
+
+    <footer>
+        <div class="footer_wrap box_width">
+            <p>Copyright (C) 20018 スナック38 </p>
+        </div>
+    </footer>
+</body>
+
+
+<script>
+
+$(function() {
+    $('#page_top').click(function(){
+        $('html').animate({scrollTop:0},"300");
+    });
+    $('#page_top').hide();
+    $(window).scroll(function(){
+        if($(window).scrollTop() > 0) {
+            $('#page_top').fadeIn(600);
+        } else {
+            $('#page_top').fadeOut(600);
+        }
+    });
+    $('a[href*=#]').click(function() {
+    var target = $(this.hash);
+    //if (target.length) {
+    if (target) {
+        var targetOffset = target.offset().top;
+        $('html,body').animate({scrollTop: targetOffset},400,"easeInOutQuart");
+        return false;
+        }
+    });
+
+    });
+
+</script>
+
+</html>
